@@ -16,7 +16,7 @@ Je suis un **UI Designer Roblox** passionné par la création d'interfaces innov
 
 Voici quelques-uns de mes projets sur Roblox :
 
-- **[Astral](lien)** : Astral est un UI d'exploit universel, conçu spécifiquement pour certains rôles français (Galax, Roxville, Noweye, etc.). Ce projet met en avant mes compétences en design et en cheat Roblox.
+- **[Astral](https://github.com/Censur-e/Astral)** : Astral est un UI d'exploit universel, conçu spécifiquement pour certains rôles français (Galax, Roxville, Noweye, etc.). Ce projet met en avant mes compétences en design et en cheat Roblox.
 
 ---
 
