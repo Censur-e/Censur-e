@@ -1,0 +1,219 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Censure.me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            transition: background-color 0.3s, color 0.3s;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+            background-color: #0d1117;
+            transition: background-color 0.3s;
+        }
+        .navbar a {
+            color: #c9d1d9;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            position: relative;
+        }
+        .navbar a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #8b949e;
+            transition: width .3s;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .navbar a:hover::after, .navbar a.active::after {
+            width: 50%;
+            background: #8b949e;
+        }
+        .navbar a.active::after {
+            background: #8b949e;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+        }
+        .content h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin: 0;
+        }
+        .content h2 {
+            font-size: 24px;
+            font-weight: 400;
+            margin: 10px 0;
+            color: #8b949e;
+        }
+        .content p {
+            font-size: 16px;
+            max-width: 600px;
+            margin: 20px 0;
+        }
+        .portfolio {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+        }
+        .portfolio h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .portfolio .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .portfolio .projects .project {
+            margin: 10px;
+            text-align: center;
+        }
+        .portfolio .projects .project img {
+            width: 300px;
+            height: auto;
+            border-radius: 15px; /* Rounded corners */
+        }
+        .portfolio .projects .project p {
+            font-size: 16px;
+            margin: 10px 0 0 0;
+        }
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #0d1117;
+            transition: background-color 0.3s;
+        }
+        .footer .social-icons a {
+            font-size: 24px;
+            margin: 0 10px;
+            color: #c9d1d9;
+        }
+        .footer .social-icons a:hover {
+            color: #8b949e;
+        }
+        .light-mode {
+            background-color: #ffffff;
+            color: #0d1117;
+        }
+        .light-mode .navbar {
+            background-color: #ffffff;
+        }
+        .light-mode .footer {
+            background-color: #ffffff;
+        }
+        .light-mode .navbar a {
+            color: #0d1117;
+        }
+        .light-mode .navbar a::after {
+            background: #0d1117;
+        }
+        .light-mode .navbar a:hover::after, .light-mode .navbar a.active::after {
+            background: #0d1117;
+        }
+        .light-mode .content h2 {
+            color: #0d1117;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" id="theme-toggle">☀️</a>
+    </nav>
+    <div class="content">
+        <h1>Censure</h1>
+        <h2 id="demo"></h2>
+        <p>Je suis un UIDesigner passionné par la création d'interfaces utilisateur intuitives et esthétiques. J'ai travaillé sur divers projets, y compris des applications web et mobiles, en mettant l'accent sur l'expérience utilisateur et le design minimaliste.</p>
+        <div class="portfolio">
+            <h2>Mes Réalisations</h2>
+            <div class="projects">
+                <div class="project">
+                    <img src="https://via.placeholder.com/300x200" alt="Projet 1">
+                    <p>Projet 1 - Description du projet 1</p>
+                </div>
+                <div class="project">
+                    <img src="https://via.placeholder.com/300x200" alt="Projet 2">
+                    <p>Projet 2 - Description du projet 2</p>
+                </div>
+                <div class="project">
+                    <img src="https://via.placeholder.com/300x200" alt="Projet 3">
+                    <p>Projet 3 - Description du projet 3</p>
+                </div>
+                <!-- Ajoutez plus de projets ici -->
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://discord.com" target="_blank"><i class="fab fa-discord"></i></a>
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+            themeToggle.textContent = document.body.classList.contains('light-mode') ? '🌙' : '☀️';
+        });
+
+        var i = 0;
+        var txt1 = 'UIDesigner';
+        var txt2 = 'Exploiteur Roblox';
+        var speed = 100;
+        var isDeleting = false;
+        var currentTxt = txt1;
+
+        function typeWriter() {
+            if (isDeleting) {
+                if (i > 0) {
+                    document.getElementById("demo").innerHTML = currentTxt.substring(0, i - 1);
+                    i--;
+                    setTimeout(typeWriter, speed);
+                } else {
+                    isDeleting = false;
+                    currentTxt = currentTxt === txt1 ? txt2 : txt1;
+                    setTimeout(typeWriter, speed);
+                }
+            } else {
+                if (i < currentTxt.length) {
+                    document.getElementById("demo").innerHTML += currentTxt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                } else {
+                    isDeleting = true;
+                    setTimeout(typeWriter, speed + 1000); // Pause before deleting
+                }
+            }
+        }
+
+        typeWriter();
+    </script>
+</body>
+</html>
