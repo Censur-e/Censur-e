@@ -16,6 +16,10 @@ Je suis un **UI Designer Roblox** passionné par la création d'interfaces innov
 
 Voici quelques-uns de mes projets sur Roblox :
 
+- **[Obsidian Anti-Cheat](https://discord.wf/obsidianac)** : Obsidian est un anti cheat 100% gratuit pour roblox qui permet de protéger votre serveur, en savoir plus sur le serveur Discord
+
+- **Sentinel Bypass** : Script qui permet de bypass Sentinel ( Franchement pour un Anti cheat payant ils font pas le taf ) ( Indispo pour l'instant je verrai si je le met )
+
 - **[Astral](https://github.com/Censur-e/Astral)** : Astral est un UI d'exploit universel, conçu spécifiquement pour certains rôles français (Galax, Roxville, Noweye, etc.). Ce projet met en avant mes compétences en design et en cheat Roblox.
 
 ---
