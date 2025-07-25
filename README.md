@@ -34,7 +34,7 @@ Voici quelques-uns de mes projets sur Roblox :
 
 N'hésite pas à me contacter pour discuter, partager des idées ou si tu souhaites que je réalise une création (c'est totalement gratuit !) :
 
-- **Discord** : hugo1_2
+- **Discord** : cen_sure
 
 ---
 
